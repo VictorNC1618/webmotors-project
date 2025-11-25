@@ -94,7 +94,7 @@ h1 {
 }
 
 .center-section a:hover {
-  color: #f3123c;
+  color: var(--primary);
 }
 
 .concurso-link {
@@ -106,12 +106,12 @@ h1 {
 .badge {
     align-items: center;
     background: #ffffff;
-    color: #ff0000;
+    color: var(--primary);
     font-size: 8px;
     padding: 1px 10px;
     border-radius: 12px;
-    border: 1px solid #ff0000;
-    border-color: #f3123c;
+    border: 1px solid var(--primary);
+    border-color:var(--primary);
     font-weight: 800;
 }
 
