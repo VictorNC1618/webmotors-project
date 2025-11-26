@@ -8,12 +8,12 @@
     <nav class="center-section">
       <a href="#">Comprar</a>
       <a href="#">Vender</a>
-      <a href="#">Assinar</a>
+      <a href="#" class="assinar-link">Assinar <span class="badge">NOVO</span></a>
       <a href="#">Serviços</a>
       <a href="#">Notícias WM1</a>
-      <a href="#">Ajuda</a>
-      <a href="#" class="concurso-link">Concurso Coala <span class="badge">PARTICIPE</span></a>
     </nav>
+
+    <SearchBox/>
     
     <div class="right-section">
       <a href="#" class="icon-link">
@@ -31,7 +31,8 @@
 </template>
 
 <script setup>
-import { User, Heart, MessageCircle } from 'lucide-vue-next';
+import { User, Heart, MessageCircle, Search } from 'lucide-vue-next';
+import SearchBox from '../components/SearchBox.vue';
 </script>
 
 <style scoped>
@@ -97,7 +98,7 @@ h1 {
   color: var(--primary);
 }
 
-.concurso-link {
+.assinar-link {
     display: flex;
     align-items: center;
     gap: 4px;
