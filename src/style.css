@@ -9,6 +9,28 @@ body {
   font-family: Arial, sans-serif;
 }
 
+.buttons{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;           /* remove visual nativo do botão */
+    border: none;               /* remove borda padrão */
+    background: #2e2e36;        /* cor personalizada */
+    color: #fff;
+    padding: 6px 14px;          /* distancia do texto à borda */
+    min-width: 90px;            /* largura mínima em vez de fixa */
+    height: 30px;
+    border-radius: 20px;        /* formato pill */
+    box-shadow: none;           /* remove sombra padrão */
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 600;
+    line-height: 1;             /* evita desalinhamento vertical */
+    transition: background-color .15s ease, transform .06s ease; /* animações controladas */
+    -webkit-tap-highlight-color: transparent; /* remove ripple em mobile/WebKit */
+}
+
 :root {
+  --light:  #f5f5f5;
   --primary: #ff0000;
+  --text:  #ffffff;
 }

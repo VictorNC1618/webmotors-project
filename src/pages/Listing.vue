@@ -1,11 +1,16 @@
+<script setup>
+import SearchCard from '../components/SearchCard.vue';
+</script>
+
 <template>
 
     <div class="container">
 
         <div class="header">
-            <div>
-                <h1>Carros à venda</h1>
-            </div>
+            <h1>Carros usados e seminovos em todo o Brasil</h1>
+        </div>
+        <div>
+            <SearchCard/>
         </div>
 
     </div>
@@ -17,24 +22,19 @@
 
 
 .container{
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
-    background-color: rgb(212, 0, 0);
+    background-color:#1f1f2c;
 }
 
 .header {
-    width: 1000px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    flex-direction: row;
-    display: flex
+   margin: 30px;
 }
 
 h1 {
-    background-color: aqua;
-    font-size: 2em;
-    font-weight: bold;
-    color: blue
+    font-size: 1.3em;
+    color: var(--text);
 }
 </style>
